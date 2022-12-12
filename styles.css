@@ -1,0 +1,111 @@
+:root {
+  /*Colors*/
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+
+  /*Fonts*/
+  --Outfit: "Outfit", sans-serif;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: var(--Light-gray);
+}
+
+.container {
+  display: grid;
+  grid-auto-rows: 10rem;
+  height: 31rem;
+  width: 20rem;
+
+  margin: 10rem auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+}
+
+h2 {
+  font-family: var(--Outfit);
+  text-align: center;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: var(--Outfit);
+  color: var(--Grayish-blue);
+  line-height: 1.2rem;
+  text-align: center;
+  width: 16.1rem;
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-auto-rows: 10rem;
+    height: 20rem;
+
+    margin: 10rem auto;
+    width: 300px;
+    height: 31rem;
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
