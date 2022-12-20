@@ -60,10 +60,10 @@ body {
 .container {
   display: grid;
   grid-auto-rows: 10rem;
-  height: 31rem;
-  width: 20rem;
+  height: 28rem;
+  width: 18.1rem;
 
-  margin: 10rem auto;
+  margin: 5rem auto;
   background: #fff;
   padding: 15px;
   border-radius: 20px;
@@ -79,17 +79,20 @@ img {
 
 h2 {
   font-family: var(--Outfit);
+  font-size: 1.2rem;
+  width: 15.8rem;
   text-align: center;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .description {
   font-family: var(--Outfit);
+  font-size: 0.9rem;
   color: var(--Grayish-blue);
   line-height: 1.2rem;
   text-align: center;
-  width: 16.1rem;
+  width: 14.5rem;
 }
 
 @media (min-width: 800px) {
@@ -99,13 +102,25 @@ h2 {
     height: 20rem;
 
     margin: 10rem auto;
-    width: 300px;
-    height: 31rem;
+    width: 293px;
+    height: 28.4rem;
     background: #fff;
     padding: 15px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  img {
+    margin-bottom: 1.6rem;
+  }
+
+  h2 {
+    width: 15.8rem;
+  }
+
+  .description {
+    width: 15rem;
   }
 }
